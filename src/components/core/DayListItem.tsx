@@ -33,5 +33,6 @@ const styles = StyleSheet.create({
     text: {
       color: '#1E43B1',
       fontSize: 70,
+      fontFamily: 'Sevillana',
     }
   });
