@@ -3,21 +3,20 @@
 /* -------------------------------------------------------------------------- */
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, FlatList, ActivityIndicator } from 'react-native';
-import DayListItem from './src/components/core/DayListItem';
+import DayListItem from '../../src/components/core/DayListItem';
 import { useEffect } from 'react';
 
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 import {Rubik_400Regular, Rubik_700Bold,} from '@expo-google-fonts/rubik';
 import {Sevillana_400Regular,} from '@expo-google-fonts/sevillana'
 import * as SplashScreen from 'expo-splash-screen';
-
 /* -------------------------------------------------------------------------- */
 
 SplashScreen.preventAutoHideAsync();
 
 const days = [...Array(24)].map((val, index) => index + 1);
 
-export default function App() 
+export default function HomeScreen() 
 {
   const [fontsLoaded, fontError] = useFonts(
   {
