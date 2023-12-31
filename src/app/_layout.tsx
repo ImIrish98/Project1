@@ -1,3 +1,6 @@
+/* -------------------------------------------------------------------------- */
+/*                               Import Section                               */
+/* -------------------------------------------------------------------------- */
 import { Stack } from "expo-router";
 import { useEffect } from 'react';
 
@@ -7,7 +10,6 @@ import {Sevillana_400Regular,} from '@expo-google-fonts/sevillana'
 
 import * as SplashScreen from 'expo-splash-screen';
 /* -------------------------------------------------------------------------- */
-
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout()
