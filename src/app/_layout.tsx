@@ -9,6 +9,9 @@ import {Rubik_400Regular, Rubik_700Bold,} from '@expo-google-fonts/rubik';
 import {Sevillana_400Regular,} from '@expo-google-fonts/sevillana'
 
 import * as SplashScreen from 'expo-splash-screen';
+
+
+import { GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
 /* -------------------------------------------------------------------------- */
 SplashScreen.preventAutoHideAsync();
 
@@ -36,9 +39,10 @@ export default function RootLayout()
         }
 
     return(
+        <GestureHandlerRootView style={{flex: 1}}>
         <Stack screenOptions={{}}>
             <Stack.Screen name='index' options={{title: 'Art Catalog'}}/>
             
-        </Stack>
+        </Stack></GestureHandlerRootView>
     );
 }
